@@ -6,8 +6,10 @@ html,body, #main{
 }
 
 body{
-    background: url(../imgs/bg-1.jpg);
+    background-image: url(../imgs/bg-1.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%;
     font-family: Helvetica,Arial, sans-serif;
 }
 
@@ -22,7 +24,7 @@ font-family: 'Dancing Script', cursive;
 font-size: 1.5em;
 }
 .navbar-light .navbar-nav .nav-link:hover{
-color: #9bf0e1;
+color: #919496;
 }
 
 .navbar-light .navbar-toggler {
@@ -42,7 +44,7 @@ color: #9bf0e1;
     font-size: 2.5em;
 }
 #sign:hover{
-    color: #9bf0e1;
+    color: #919496;
 }
 #main{
     text-align: center;
@@ -56,7 +58,7 @@ color: #9bf0e1;
     background: #fff;
     padding: 20px 10px;
 }
-#about h1{
+.section-text{
     font-family: 'Dancing Script', cursive;
     font-weight: 500;
 }
@@ -73,3 +75,30 @@ color: #9bf0e1;
 .dev-icon{
     margin: 5px 5px;
 }
+article{
+    font-family: 'Comfortaa', cursive;
+    font-size: .95em;
+}
+
+#projects{
+    color: white;
+    background: rgba(0,0,0,0.4);
+}
+.bg-card{
+    color: #919496;
+    margin: 10px 0;
+    background:rgba(255,255,255,.9);
+}
+.dev-icon-about{
+    color: rgba(0,0,0,0.8);
+}
+/* .btn-custom{
+    color: #919496;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s ,color 0.4s;
+    padding: 10px 20px;
+    margin: 5px;
+} */
