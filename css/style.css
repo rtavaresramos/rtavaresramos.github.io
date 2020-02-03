@@ -153,6 +153,7 @@ color: #919496;
 
 .dev-icon{
     margin: 5px 5px;
+    
 }
 article{
     font-family: 'Comfortaa', cursive;
@@ -160,15 +161,20 @@ article{
 }
 
 #projects{
+    width: 100%;
     color: white;
     background: rgba(0,0,0,0.4);
+    padding: 5px 40px;
 }
 .bg-card{
     color: #919496;
     margin: 10px 0;
     background:rgba(255,255,255,.9);
 }
-
+.card-carousel-style{
+    width: 60%; 
+    margin: 5px 240px;
+}
 .card-display{
     weight: 200;
 }
@@ -182,7 +188,7 @@ article{
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px){ 
     html{
         overflow-x: hidden;
     }
@@ -214,28 +220,78 @@ nav.navbar-transparent{
     justify-content: center; 
     align-items: center; 
 }
-
-#projects{
-    padding: 0px 40px;
+.card-carousel-style{
+    width:75%;
+    margin: 0px 0px;
 }
-
  }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px){ 
     html{
         overflow-x: hidden;
     }
+    body{
+        background-image: url(../imgs/bg-1-mobile.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        font-family: Helvetica,Arial, sans-serif;
+    }
+  
+    #about{
+        display: flex; 
+    }
+    #about p{
+        padding: 0px 20px;
+    }
+    
+    #about-img{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+        margin: 10px 115px;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .card-carousel-style{
+        width:75%;
+        margin: 0px 60px;
+    }
+
+    
 }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px){ 
 html{
     overflow-x: hidden;
 }
+body{
+    background-image: url(../imgs/bg-1-ipad.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+#about-img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+}
+
+.card-carousel-style{
+    width:75%;
+    margin: 0px 85px;
+}
+
 }
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.98px){ 
     html{
         overflow-x: hidden;
     }
