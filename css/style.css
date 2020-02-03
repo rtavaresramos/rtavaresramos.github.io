@@ -61,7 +61,7 @@ body{
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
     transform: rotate(45deg);
-    margin: -10px;
+    margin: -5px -10px;
     animation: animate 2s infinite;
 }
 
@@ -132,10 +132,11 @@ color: #919496;
     
 }
 
-#about, #techs, #contact{
+#about, #techs{
     background: #fff;
     padding: 20px 10px;
 }
+
 .section-text{
     font-family: 'Dancing Script', cursive;
     font-weight: 500;
@@ -174,3 +175,71 @@ article{
 .dev-icon-about{
     color: rgba(0,0,0,0.8);
 }
+
+#contact{
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    html{
+        overflow-x: hidden;
+    }
+    body{
+    background-image: url(../imgs/bg-1-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    font-family: Helvetica,Arial, sans-serif;
+}
+nav.navbar-transparent{
+    background: rgba(0,0,0,0.6);
+    padding: 15px 20px;
+}
+
+#about{
+    display: flex; 
+}
+#about p{
+    padding: 0px 20px;
+}
+
+#about-img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin: 10px 115px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#projects{
+    padding: 0px 40px;
+}
+
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    html{
+        overflow-x: hidden;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+html{
+    overflow-x: hidden;
+}
+}
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    html{
+        overflow-x: hidden;
+    }
+}
+
+/* // Extra large devices (large desktops) */
+/* // No media query since the extra-large breakpoint has no upper bound on its width */
