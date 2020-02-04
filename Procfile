@@ -1,1 +1,1 @@
-web: gunicorn contatos_base.wsgi
+web: python -m SimpleHTTPServer
