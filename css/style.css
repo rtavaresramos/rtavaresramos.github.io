@@ -188,7 +188,7 @@ article{
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px){ 
+@media screen and (max-width: 575.98px){ 
     html{
         overflow-x: hidden;
     }
@@ -227,7 +227,7 @@ nav.navbar-transparent{
  }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px){ 
+@media screen and (max-width: 767.98px){ 
     html{
         overflow-x: hidden;
     }
@@ -265,7 +265,7 @@ nav.navbar-transparent{
 }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px){ 
+@media screen and (max-width: 991.98px){ 
 html{
     overflow-x: hidden;
 }
@@ -291,11 +291,190 @@ body{
 
 }
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px){ 
+@media screen and (max-width: 1199.98px){ 
     html{
         overflow-x: hidden;
     }
 }
+/* Devices Width's */
 
-/* // Extra large devices (large desktops) */
-/* // No media query since the extra-large breakpoint has no upper bound on its width */
+@media (max-device-width: 480px){ 
+html,body, #main{
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-image: url(../imgs/bg-2-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    font-family: Helvetica,Arial, sans-serif;
+}
+nav.navbar-transparent{
+    background: rgba(0,0,0,0.6);
+    padding: 5px 20px;
+}
+#sign{
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+#about{
+    display: flex; 
+    flex-direction: column;
+}
+#about p{
+    width: 315px;
+}
+#about-img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 10px 100px;
+    justify-content: center; 
+    align-items: center; 
+}
+.card-carousel-style{
+    width:70%;
+
+    margin: 0px 50px;
+} 
+#projects .card-text{
+    display: none;
+}
+#projects .card-title{
+    font-size: 1.2em;
+    text-align: center;
+}
+#projects .card-body a{
+    display: inline;
+    font-size: .8em;
+}
+#techs i{
+    font-size: 3em;
+}
+#contact i{
+    font-size: 2.5em;
+    margin: 0 -10px;
+}
+#contact h1{
+    margin: 0 50px;
+}
+#contact form{
+    margin: 0 10px;
+}
+#contact form button{
+    margin: 0 15px;
+}
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-device-width: 767.98px){ 
+    html,body, #main{
+        height: 100%;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    body{
+        background-image: url(../imgs/bg-3-mobile.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        font-family: Helvetica,Arial, sans-serif;
+    }
+    nav.navbar-transparent{
+        background: rgba(0,0,0,0.6);
+        padding: 5px 20px;
+    }
+    #sign{
+        color: #fff;
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.2em;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color: #fff;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5em;
+    }
+    #about{
+        display: flex; 
+        flex-direction: column;
+    }
+    #about p{
+        width: 650px;
+        margin: 5px -50px;
+    }
+    #about-img{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        margin: 10px 150px;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .card-carousel-style{
+        width:70%;
+    
+        margin: 0px 74px;
+    } 
+    #projects .card-text{
+        display: none;
+    }
+    #projects .card-title{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    #projects .card-body a{
+        display: inline;
+        font-size: .8em;
+    }
+    #techs i{
+        font-size: 3em;
+    }
+    #contact i{
+        font-size: 2.5em;
+        margin: 0 -10px;
+    }
+    #contact h1{
+        margin: 0 50px;
+    }
+    #contact form{
+        margin: 0 10px;
+    }
+    #contact form button{
+        margin: 0 15px;
+    }
+}
+/* // Large devices (desktops, less than 1200px) */
+@media (max-device-width: 1199.98px){ 
+    html{
+        overflow-x: hidden;
+        font-size: 1.1em;
+    }
+    body{
+        background-image: url(../imgs/bg-1-ipad.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        font-family: Helvetica,Arial, sans-serif;
+    }
+    
+    #about-img{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card-carousel-style{
+        width:75%;
+        margin: 0px 85px;
+    }
+}
