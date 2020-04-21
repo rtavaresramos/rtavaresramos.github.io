@@ -5,7 +5,11 @@ html,body, #main{
     height: 100%;
     scroll-behavior: smooth;
 }
+#project-container{
 
+
+    background: #000;
+}
 body{
     background-image: url(../imgs/bg-1.jpg);
     background-repeat: no-repeat;
@@ -284,10 +288,6 @@ body{
     height: 250px;
 }
 
-.card-carousel-style{
-    width:75%;
-    margin: 0px 85px;
-}
 
 }
 /* // Large devices (desktops, less than 1200px) */
@@ -341,13 +341,9 @@ nav.navbar-transparent{
     justify-content: center; 
     align-items: center; 
 }
-.card-carousel-style{
-    width:60%;
 
-    margin: 0px 50px;
-} 
-#projects .card-text{
-    display: none;
+ #black-text{
+color: #000;
 }
 #projects .card-title{
     font-size: 1.2em;
