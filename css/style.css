@@ -298,7 +298,7 @@ body{
 }
 /* Devices Width's */
 
-@media (max-device-width: 479.98px){ 
+@media screen and (max-device-width: 479.98px){ 
 html,body, #main{
     height: 100%;
     scroll-behavior: smooth;
@@ -371,6 +371,7 @@ color: #000;
 }
 }
 /* // Small devices (landscape phones, less than 768px) */
+
 @media (min-device-width:480px) and (max-device-width: 767.98px){ 
     html,body, #main{
         height: 100%;
