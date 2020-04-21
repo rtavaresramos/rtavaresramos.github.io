@@ -377,6 +377,11 @@ color: #000;
         scroll-behavior: smooth;
         overflow-x: hidden;
     }
+    .project-container .project-card .project-card-body .card-buttons{
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+      }
     body{
         background-image: url(../imgs/bg-3-mobile.png);
         background-repeat: no-repeat;
