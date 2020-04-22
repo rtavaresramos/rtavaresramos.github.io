@@ -28,13 +28,14 @@
 }
 .project-container .project-card h5 ,p{
   color: #000;
+  margin: 10px 10px;
 }
 .project-container .project-card-body{
   display: flex;
   flex-direction: column;
   text-align: center;
 
-  padding: 40px;
+  padding: 0 30px;
 }
 
 .project-container .project-card img{
@@ -51,7 +52,7 @@
   width: 100px;
   height: 40px;
 
-  margin: 0 8px;
+  margin: 12px;
 
   border-radius: 6px;
   border: 1px solid #6d6d6d;
@@ -74,7 +75,6 @@
 }
 
 .project-container .project-card .project-card-body .card-buttons .inative{
-  /* filter: brightness(70%); */
   color: #fff;
   background: #bbbbbb;
   cursor: not-allowed;
