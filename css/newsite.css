@@ -215,7 +215,7 @@ color: var(--white-color);
 .content__container--img img{
   width: 350px;
   border-radius: 8px;
-
+  box-shadow: 0 0 3px #d6d6d6;
 }
 
 .content__container{
@@ -323,7 +323,8 @@ input, textarea, button{
 
 }
 .form__group{
-  width: 600px;
+  max-width: 600px;
+  margin: 16px;
 }
 ::-webkit-input-placeholder {
   color: var(--primary-color);
