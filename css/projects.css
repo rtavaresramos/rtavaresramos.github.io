@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --primary-color: #31AFB4;
+  --secundary-color: #115571;
+  --dark-color: #22292F;
+  --grey-color: #717377;
+  --light-grey-color: #F7F7F7;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+.project-container{
+  margin: 0 0;
+  padding: 0 0;
+  width: 100%;
+  height: auto;
+}
+.project-container-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.project-container .project-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  align-items: center;
+
+  min-height: 425px;
+  width: 400px;
+
+  overflow: hidden;
+
+  margin: 10px 10px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 0 5px var(--dark-color);
+}
+.project-container .project-card h5 {
+  color: var(--primary-color);
+  margin: 10px 10px;
+  font-size: 22px;
+}
+
+p{
+  color: var(--dark-color);
+}
+.project-container .project-card-body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.project-container .project-card img{
+  width: 400px;
+}
+.project-container .project-card a{
+  text-decoration: none;
+  color: var(--white-color);
+  background: var(--primary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 40px;
+
+  margin: 12px;
+
+  border-radius: 6px;
+
+  transition: background color .2s;
+}
+
+.project-container .project-card a:hover{
+filter: brightness(80%);
+}
+
+
+.project-container .project-card .project-card-body .card-buttons{
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.project-container .project-card .project-card-body .card-buttons .inative{
+  color: #fff;
+  background: var(--secundary-color);
+  cursor: not-allowed;
+  border: 1px solid #6d6d6d;
+}
