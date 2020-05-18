@@ -56,7 +56,34 @@
     overflow: auto;
     background-color: rgba(31, 45, 48, 0.88);
   }
+  .modal-content {
+    margin: 10% auto;
+    width: auto;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  #modal-content{
+    background: #fff;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  }
+  .modal-header, .modal-body, .modal-footer {
+    padding: 15px 40px;
+    background: #fff;
+   
+  }
   
+  .close {
+    float: right;
+    font-size: 2em;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+  }
   @keyframes modalopen {
     from {
       opacity: 0;
@@ -87,7 +114,7 @@
 <img style="height:250px;" src="https://www.portaldevendasonline.com.br/wp-content/uploads/2020/03/mockup-masterclass-e-pdf-5-passos.png" alt="">
 <img src="https://www.portaldevendasonline.com.br/wp-content/uploads/2020/03/bullets-5-passos.png" alt="">
 </div>
-<div class="container__content" style="display:flex;flex-direction:column;max-width:500px;">
+<div class="container__content" style="display:flex;flex-direction:column;max-width:500px; margin:16px;">
 <h1 style="font-size:28px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif;">
 Os 5 Passos Simples Porém Altamente Eficazes que Podem Fazer um Iniciante 
 Vender R$500 a R$1.000 Por Dia Pela Internet
@@ -105,6 +132,12 @@ Aplique esses 5 passos e veja seus resultados aparecerem!
 
 </div>
     <div id="my-modal" class="modal">
+    <div class="modal-content">
+          <div class="container">
+          <div class="col">
+              <span class="close"><i class="fas fa-times"></i></span>
+          </div>
+      </div>
         <div class="sib-form" style="text-align: center;
                 background-color: transparent;                                           ">
         <div id="sib-form-container" class="sib-form-container">
@@ -173,6 +206,8 @@ Aplique esses 5 passos e veja seus resultados aparecerem!
         </div>
         </div>
     </div>
+    </div>
+
 </div>
 
 </body>
