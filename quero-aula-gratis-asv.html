@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <style>
+  <!-- Begin Sendinblue Form -->
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<style>
   @font-face {
     font-display: block;
     font-family: Roboto;
@@ -38,86 +40,142 @@
     color: #c0ccda;
     border-width: px;
   }
+  :root {
+    --modal-duration: 1s;
+    --modal-color: #18ACC4;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(31, 45, 48, 0.88);
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes modalopen-2 {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 </style>
 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" 
+    crossorigin="anonymous"
+    >
 
-    
-    <title>Quero a aula gratis</title>
-</head>
 <body>
 
-<div class="sib-form" style="text-align: center;
-         background-color: #0a2042;                                           ">
-  <div id="sib-form-container" class="sib-form-container">
-    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
-      <form id="sib-form" method="POST" action="https://a6caac8b.sibforms.com/serve/MUIEAPpPlFViTiVTDaej6ymezINnKnC-aJ4Ovn2uqZteFaGACnJ2im_DyPohqKE3XJavfXRgSeYyHEaV6JXE5qOmH28KybpYzOdKscoRWKc4ibRMFMX62VRGHUIKodOrQhC_KYXaKRu0wxyeBuGsI5uQ5EpXIARRSVxnVU0q3G3x15QaXwSozet18z2RVBl9zNnyUosE2W3QUPMF">
-        <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="font-size:36px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
-            <p>Ganhe de R$300 a R$4.000 POR DIA💰</p>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-form-block sib-image-form-block" style="text-align: center">
-            <img src="https://img.mailinblue.com/2874485/images/rnb/original/5ec17310ac7cd72262531305.jpeg" style="width: 500px;height: 500px;" alt="" title="" />
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="font-size:16px; text-align:center; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
-            <div class="sib-text-form-block">
-              <p>Se você está realmente sério em relação a ganhar (MUITO) dinheiro pelo celular, aplicando estratégias 100% validadas, então esse é seu próximo passo ideal.</p>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-                <div class="entry__field">
-                  <input class="input" maxlength="200" type="text" id="NOME" name="NOME" autocomplete="off" placeholder="NOME" data-required="true" required />
+<div class="container" style="display:flex; flex-wrap:wrap; justify-content:center;align-items:center; text-align:center;">
+<div class="container__content" style="display:flex;flex-direction:column;max-width:400px;">
+<img style="height:250px;" src="https://www.portaldevendasonline.com.br/wp-content/uploads/2020/03/mockup-masterclass-e-pdf-5-passos.png" alt="">
+<img src="https://www.portaldevendasonline.com.br/wp-content/uploads/2020/03/bullets-5-passos.png" alt="">
+</div>
+<div class="container__content" style="display:flex;flex-direction:column;max-width:500px;">
+<h1 style="font-size:28px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif;">
+Os 5 Passos Simples Porém Altamente Eficazes que Podem Fazer um Iniciante 
+Vender R$500 a R$1.000 Por Dia Pela Internet
+</h1>
+<p style="font-size:16px; text-align:center; font-weight:400; font-family:&quot;Helvetica&quot;, sans-serif;">
+Descubra de uma vez por todas o que alguns players do 
+Marketing Digital insistem em esconder de você. 
+Aplique esses 5 passos e veja seus resultados aparecerem!
+</p>
+<div class="sib-form-block" style="text-align: center">
+                    <a id="modal-btn" href="#modal-btn" class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:18px;text-decoration:unset; text-align:center; font-weight:500; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#386ff2; padding:16px; border-radius:6px;">
+                    Clique aqui e faça seu cadastro para receber o material gratuito
+                    </a>
                 </div>
-              </div>
 
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-
-                <div class="entry__field">
-                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+</div>
+    <div id="my-modal" class="modal">
+        <div class="sib-form" style="text-align: center;
+                background-color: transparent;                                           ">
+        <div id="sib-form-container" class="sib-form-container">
+            <div id="sib-container" class="sib-container--large sib-container--horizontal" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+            <form id="sib-form" method="POST" action="https://a6caac8b.sibforms.com/serve/MUIEAGL8YAbVyhV8D_SyvpPUmOyWGA7RLoQM7f0J0FwQbxzkt0U0Pi4kH8FF3LUdgBym1FCWi0H9UgFhdJ2eGHURAY_utkvfTZ6Bs2uJfi5L0QSeK7youi5OWX2OSptzdRee9UuDHqN8X6KBq7wsuH-kYgzmZzWwBrtIxJzjT5HbgOtJmsA9g0WSQQAQ7bmcI7_QmzGyWP2jFVpj">
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="font-size:36px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#000000; background-color:transparent; border-width:px;">
+                    <p><strong>Os 5 Passos Para Vender Pela Internet</strong></p>
                 </div>
-              </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
+                    <div class="sib-text-form-block">
+                    <p>Digite seu nome e e-mail abaixo para receber a Masterclass</p>
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                    <div class="form__label-row form__label-row--horizontal">
 
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;">
-              </label>
+                        <div class="entry__field" style="height:60px; border-radius:6px;">
+                        <input class="input" maxlength="200" type="text" id="NOME" name="NOME" autocomplete="off" placeholder="Digite seu nome" data-required="true" required />
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                    <div class="form__label-row form__label-row--horizontal">
+
+                        <div class="entry__field"style="height:60px; border-radius:6px;">
+                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Digite seu melhor e-mail" data-required="true" required />
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="text-align: center">
+                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#386ff2; padding:16px; border-radius:6px;"
+                    form="sib-form" type="submit">
+                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+                        />
+                    </svg>
+                    Acessar Masterclass + PDF Gratuito
+                    </button>
+                </div>
+                </div>        <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; border-width:px;">
+                    <div class="sib-text-form-block">
+                    <p style="font-size:12px; color:#d6d6d6; margin:0 0 0 50px;">Nós valorizamos sua privacidade. Não mandamos spam.</p>
+                    </div>
+                </div>
+                </div>
+                <input type="text" name="email_address_check" value="" class="input--hidden">
+                <input type="hidden" name="locale" value="pt">
+                <input type="hidden" name="html_type" value="simple">
+            </form>
             </div>
-          </div>
         </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="text-align: center">
-            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#0e2342; border-radius:3px; border-width:0px;"
-              form="sib-form" type="submit">
-              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
-                />
-              </svg>
-              RECEBER AULA GRÁTIS
-            </button>
-          </div>
         </div>
-        <input type="text" name="email_address_check" value="" class="input--hidden">
-        <input type="hidden" name="locale" value="pt">
-        <input type="hidden" name="html_type" value="simple">
-      </form>
     </div>
-  </div>
 </div>
 
-
 </body>
+
+<script src="./js/open-modal.js"></script>
 </html>
