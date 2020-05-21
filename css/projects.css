@@ -16,14 +16,15 @@
 .project-container{
   margin: 0 0;
   padding: 0 0;
-  width: 100%;
+  width: auto;
   height: auto;
 }
 .project-container-row{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: auto;
+  overflow-x: scroll;
 }
 .project-container .project-card{
   display: flex;
@@ -33,7 +34,7 @@
   align-items: center;
 
   min-height: 425px;
-  width: 400px;
+  min-width: 400px;
 
   overflow: hidden;
 
