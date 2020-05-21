@@ -215,7 +215,7 @@ color: var(--white-color);
 .content__container--img img{
   width: 350px;
   border-radius: 8px;
-  box-shadow: 0 0 3px #d6d6d6;
+  box-shadow: 0 0 15px #d6d6d6;
 }
 
 .content__container{
