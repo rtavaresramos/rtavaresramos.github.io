@@ -242,6 +242,8 @@ color: var(--white-color);
 .content__container--text span{
   color: var(--primary-color);
   font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
 }
 .content__container--text p{
 hyphens: auto;

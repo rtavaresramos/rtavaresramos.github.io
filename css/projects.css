@@ -13,11 +13,39 @@
   --black-color: #000;
 }
 
-.project-container{
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  } 
+
+
+
+.project-container ::-webkit-scrollbar {
+  display: none;
+}
+
+.project-container {
+  position: relative;
   margin: 0 0;
   padding: 0 0;
   width: auto;
   height: auto;
+  padding: 0 30px;
+}
+.display-none{
+  display: none;
 }
 .project-container-row{
   display: flex;
@@ -25,6 +53,8 @@
   justify-content: flex-start;
   width: auto;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
 }
 .project-container .project-card{
   display: flex;
@@ -40,8 +70,18 @@
 
   margin: 10px 10px;
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 0 5px var(--dark-color);
+
+  box-shadow: 0 0 8px var(--dark-color);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+  -ms-overflow-style: none;
 }
 .project-container .project-card h5 {
   color: var(--primary-color);
@@ -78,7 +118,6 @@ p{
 
   margin: 12px;
 
-  border-radius: 6px;
 
   transition: background color .2s;
 }
@@ -104,4 +143,143 @@ filter: brightness(80%);
   background: var(--secundary-color);
   cursor: not-allowed;
   border: 1px solid #6d6d6d;
+}
+
+
+.arrow-icon-container-left{
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 150px;
+
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+
+  height: auto;
+  background: rgba(255,255,255,0);
+  cursor: pointer;
+
+  opacity:0;
+  -webkit-animation: fadeIn 500ms linear;
+  -moz-animation: fadeIn 500ms linear;
+  -o-animation: fadeIn 500ms linear;
+  animation: fadeIn 500ms linear; 
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  -o-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+}
+
+.arrow-icon-container-right{
+  position: absolute;
+  right: 20px;
+  margin-top: 150px;
+
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+
+  opacity:0;
+  -webkit-animation: fadeIn 500ms linear;
+  -moz-animation: fadeIn 500ms linear;
+  -o-animation: fadeIn 500ms linear;
+  animation: fadeIn 500ms linear; 
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  -o-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+
+  height: auto;
+  background: rgba(255,255,255,0);
+  cursor: pointer;
+
+}
+
+.arrow-icon-container .arrow-icon-background{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-decoration: unset;
+
+  padding: 0 8px;
+
+  height: 85px;
+  width: 75px;
+  cursor: pointer;
+
+  background: rgba(255,255,255,.8);
+  border: 6px solid var(--primary-color);
+  border-radius: 50%;
+
+  transition: filter .2s;
+}
+
+.arrow-icon-container .arrow-icon-background:hover{
+  filter: brightness(120%);
+}
+.arrow-icon-container .arrow-icon-left {
+  margin: 10px 10px;
+
+  width: 20px;
+  height: 20px;
+
+  background: rgba(255,255,255,0);
+
+  border-bottom: 5px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
+  transform: rotate(135deg);
+
+} 
+
+.arrow-icon-container .arrow-icon-right {
+  margin: 10px 10px;
+
+  width: 20px;
+  height: 20px;
+
+  background: rgba(255,255,255,0);
+
+  border-bottom: 5px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
+  transform: rotate(-45deg);
+
+} 
+
+@media screen and (max-width:350px){
+  .project-container .project-card{
+    min-width: 270px!important;
+    min-height: 320px!important;
+  }  
+
+  .project-container .project-card p{
+    display: none;
+  }
+  
+  .project-container {
+
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width:635px){
+  .project-container .project-card{
+    min-width: 350px;
+  }
+  .project-container {
+
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width:980px){
+
+
+  .arrow-icon-container-left,.arrow-icon-container-right{
+
+    display: none;
+    
+  }
+  
 }
