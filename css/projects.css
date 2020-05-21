@@ -249,7 +249,7 @@ filter: brightness(80%);
 
 } 
 
-@media screen and (max-width:350px){
+@media screen and (max-width:380px){
   .project-container .project-card{
     min-width: 270px!important;
     min-height: 320px!important;
