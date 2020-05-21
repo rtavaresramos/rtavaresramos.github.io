@@ -345,3 +345,93 @@ textarea{
   height: 100px;
 }
 
+@media screen and (max-width:980px){
+  .nav__container{
+    width: 100%;
+
+    padding: 30px 20px 0 0;
+  }
+
+  .logo{
+    z-index: 15;
+    position: absolute;
+    left: 40px;
+    top: 6px;
+    margin-top: 20px;
+  }
+
+  .logo img{
+    width: 170px;
+  }
+
+  .toggle{
+    top: 36px;
+  }
+
+  .toggle i{
+    display: block;
+    background-color: var(--white-color);
+  }
+
+  .toggle-off{
+    display: none;
+  }
+  .toggle--control{
+  position: absolute;
+  z-index: 10;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 500px;
+    padding-top: 450px;
+    background: var(--primary-color);
+  }
+
+  ul{    opacity:0;
+    -webkit-animation: fadeIn 500ms linear;
+    -moz-animation: fadeIn 500ms linear;
+    -o-animation: fadeIn 500ms linear;
+    animation: fadeIn 500ms linear; 
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+  ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    height: 50px;
+    margin: 0 10px;
+    list-style: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--light-grey-color);
+
+    box-shadow: 2px 2px 10px var(--dark-grey-color);
+  
+  }
+  ul a{
+    color: var(--secundary-color);
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: unset;
+    margin: 6px 0;
+  }
+  #header-background{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
