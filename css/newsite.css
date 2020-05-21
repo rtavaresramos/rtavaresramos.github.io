@@ -345,6 +345,18 @@ textarea{
   height: 100px;
 }
 
+@media screen and (max-width:635px){
+  header{
+    margin: 0;
+    padding: 0;
+    background-image: url("../imgs/newsite/banner-site-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+  
+    width: 100vw;
+    height: 100vh;
+  }
+}
 @media screen and (max-width:980px){
   .nav__container{
     width: 100%;
@@ -352,6 +364,9 @@ textarea{
     padding: 30px 20px 0 0;
   }
 
+  nav{
+    height: 100px;
+  }
   .logo{
     z-index: 15;
     position: absolute;
