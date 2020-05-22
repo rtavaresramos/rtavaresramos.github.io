@@ -28,7 +28,81 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
   }
+  #mouse-icon{
+    position: relative;
+    margin-top: 350px;
+    width: 35px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+#mouse-icon:after{
+    position: absolute;
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    content: '';
+    background: #fff;
+    left: calc(45% - 0px);
+    border-radius: 50%;
+    animation: mouse 2s infinite;
+}
 
+@keyframes mouse{
+    0%{
+        opacity: 1;
+        top: 10px;
+    }
+    100%{
+        opacity: 0;
+        top: 20px;
+    }
+}
+
+#box-scroll-indicator{ 
+    transform: translate( -50%, -50%);
+}
+
+#box-scroll-indicator span{
+    position: relative;
+    display: block;
+    top:230px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -5px -10px;
+    animation: animate 2s infinite;
+}
+
+#box-scroll-indicator span:nth-child(2){
+    animation-delay: -0.2s;
+}
+#box-scroll-indicator span:nth-child(1){
+    animation-delay: -0.4s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px -20px);
+
+    }
+
+    50%{
+
+        opacity: 1;
+
+    }
+
+    100%{
+
+        opacity: 0;
+        transform: rotate(45deg) translate(20px 20px);
+    }
+}
 
 html,body{
   padding: 0;
@@ -63,6 +137,10 @@ body{
 }
 
 header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   background-image: url("../imgs/newsite/banner-site.png");

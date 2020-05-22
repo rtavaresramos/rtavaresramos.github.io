@@ -207,14 +207,15 @@ filter: brightness(80%);
 
   padding: 0 8px;
 
-  height: 50px;
-  width: 35px;
+  height: 60px;
+  width: 55px;
   cursor: pointer;
 
   background: rgba(255,255,255,1);
   border: 3px solid var(--primary-color);
   border-radius: 6px;
   box-shadow: 0 0 15px var(--black-color);
+  outline: none;
 
   transition: filter .2s;
 }
