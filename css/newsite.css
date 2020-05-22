@@ -143,6 +143,7 @@ header{
   align-items: center;
   margin: 0;
   padding: 0;
+  background-color: #22292F;
   background-image: url("../imgs/newsite/banner-site.png");
   background-repeat: no-repeat;
   background-position: center top;
