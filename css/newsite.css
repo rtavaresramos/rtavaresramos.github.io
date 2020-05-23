@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
-
 :root{
     --primary-color: #F0BE1C;
     --secundary-color: #000;
@@ -11,6 +10,7 @@
     --white-color: #fff;
     --black-color: #000;
 }
+
 
 @-webkit-keyframes fadeIn {
   0% { opacity: 0; }
