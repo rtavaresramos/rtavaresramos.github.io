@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
-:root{
-    --primary-color: #F0BE1C;
-    --secundary-color: #000;
-    --dark-color: #22292F;
-    --grey-color: #717377;
-    --light-grey-color: #F7F7F7;
-    --white-color: #fff;
-    --black-color: #000;
-}
 
+:root{
+  --primary-color: #16BAC5;
+  --secundary-color: #0E4459;
+  --orange-color: #F15025;
+  --dark-color: #353531;
+  --grey-color: #717377;
+  --light-grey-color: #F7F7F7;
+  --white-color: #fff;
+  --black-color: #000;
+}
 
 @-webkit-keyframes fadeIn {
   0% { opacity: 0; }
@@ -264,8 +265,16 @@ color: var(--white-color);
   width: 100vw;
 }
 
-.headline__container h1{
+.orange-color{
+  color: var(--orange-color);
+}
+
+.blue-color{
   color: var(--primary-color);
+}
+
+.headline__container h1{
+  color: var(--orange-color);
   font-size: 58px;
   font-weight: 300;
 
@@ -319,7 +328,7 @@ color: var(--white-color);
 }
 
 .content__container--text span{
-  color: var(--primary-color);
+
   font-weight: 900;
   text-transform: uppercase;
   font-style: italic;
