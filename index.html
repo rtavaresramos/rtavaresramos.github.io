@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/projects.css">
     <title>RTR - Negócios Digitais</title>
 <!-- Facebook Pixel Code -->
-<script>
+<!-- <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -30,9 +30,63 @@
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=679501615927345&ev=PageView&noscript=1"
-/></noscript>
+/></noscript> -->
 <!-- End Facebook Pixel Code -->
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
 
+  @font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+  }
+  #sib-container input{
+
+    color: #0E4459;
+  }
+  #sib-container input:-ms-input-placeholder {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: #0E4459;
+    border-width: 0;
+  }
+
+  #sib-container input::placeholder {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: #0E4459;
+    border-width: 0;
+  }
+  #contact-form input:-ms-input-placeholder {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: #0E4459;
+    border-width: 0;
+  }
+
+  #contact-form input::placeholder {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: #0E4459;
+    border-width: 0;
+  }
+</style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body>
       <nav>
@@ -84,13 +138,44 @@
           todo o Brasil com Desenvolvimento de Sites, Criação de Copy, Consultoria
           e muito mais!
         </p>
-        <div class="input-email-list-add">
-          <form name="newsletter" method="POST" data-netlify="true">
-            <label for="input">CADASTRE-SE E RECEBA MATERIAIS GRATUITOS:</label>
-            <input id="input" type="text" placeholder="Nome">
-            <input type="text" placeholder="E-mail">
-            <button>Cadastrar</button>
-          </form>
+
+            <!-- Begin Sendinblue Form -->
+            
+<div class="sib-form" style="text-align: center;
+         background-color: transparent;                                           ">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="sib-container" class="sib-container--large sib-container--horizontal" style="text-align:center; background-color:transparent; max-width:540px; border-width:0px; border-color:#C0CCD9; border-style:solid;">
+      <form id="sib-form" method="POST" action="https://a6caac8b.sibforms.com/serve/MUIEACyAvy-m4ljdaDPQxxHt3A0OYOA-g1OV76PI8KDZsHyHA_bExHWuW-a37WPdWBAj-Oj3A22k8PC4SjFsJNh3ejpd3OwSKsnsTBVXNzb3Uf6hm5WMMts8S4MKIRTd58XxR1U3NDMbyjJz6cfSrwha0EjAE4MTpHCld8Wnh_kvUX2HfFRS77YYt47LOTKRWVVluHmTztKBUiPG">
+              <label for="input">CADASTRE-SE E RECEBA MATERIAIS GRATUITOS:</label>
+              <div class="form__label-row form__label-row--horizontal">
+                <div class="entry__field" style="margin-bottom: -10px; height: 50px;">
+                  <input class="input" maxlength="200" type="text" id="NOME" name="NOME" autocomplete="off" placeholder="Nome" />
+                </div>
+              </div>
+
+              <div class="form__label-row form__label-row--horizontal">
+                <div class="entry__field" style="margin-bottom: -10px; height: 50px;">
+                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="E-mail" data-required="true" required />
+                </div>
+              </div>
+        <div class="call-to-action"style="margin-bottom: -30px;">
+          <div class="sib-form-block" style="text-align: center;">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" 
+            form="sib-form" type="submit"
+            style="margin-bottom: -10px;height: 50px;margin-top: -10px">
+              Cadastrar
+            </button>
+          </div>
+        </div>
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="pt">
+        <input type="hidden" name="html_type" value="simple">
+      </form>
+    </div>
+</div>
+<!-- END - We recommend to place the below code where you want the form in your website html  -->
+<!-- End Sendinblue Form -->
+
         </div>
       </div>
     </header>
@@ -353,7 +438,7 @@
                 
                   <h1>... ou Solicitar o seu orçamento</h1>
                     <div class="form__group">
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form id="contact-form" name="contact" method="POST" data-netlify="true">
 
                             <input  type="text" name="name"placeholder="Informe seu nome" required>
                             <input  type="email" name="e-mail"placeholder="Informe seu e-mail" required>

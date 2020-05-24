@@ -229,12 +229,14 @@ header{
   color: var(--secundary-color);
 }
 
+.header-content p{
+  margin: 0 30px;
+}
 .header-content h1{
   width: 100%;
   text-align: center;
   font-weight: 300;
   font-size: 32px;
-
 }
 .header-content span{
   font-weight: 900;
@@ -526,7 +528,12 @@ footer h1{
   display: flex;
   flex-direction: column;
 }
-
+form input:-ms-input-placeholder {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: #0E4459;
+  border-width: 0;
+}
 input, textarea, button{
 
   border-radius: 4px;
@@ -543,7 +550,7 @@ input, textarea, button{
   max-width: 600px;
   margin: 16px;
 }
-::-webkit-input-placeholder {
+form ::-webkit-input-placeholder {
   color: var(--secundary-color);
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
