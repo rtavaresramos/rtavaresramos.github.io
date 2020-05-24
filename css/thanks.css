@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
+
+
+:root{
+  --primary-color: #16BAC5;
+  --secundary-color: #0E4459;
+  --orange-color: #F15025;
+  --dark-color: #353531;
+  --grey-color: #717377;
+  --light-grey-color: #F7F7F7;
+  --white-color: #fff;
+  --black-color: #000;
+}
+html,body{
+  font-family: 'Montserrat',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+a{
+    text-decoration: unset;
+}
+
+ul{
+    list-style-type: unset;
+}
+header{
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../imgs/newsite/bg-newsite-1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.thanks__header{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.thanks__header--container{
+
+  color: var(--white-color);
+  padding: 12px;
+  margin: 32px;
+
+  height: auto;
+  width: 600px;
+  box-shadow: 0 0 5px var(--dark-color);
+  background: rgba(22,186,197,1);
+
+  border-radius: 14px;
+}
+
+.thanks__header--container h1{
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+}
+.thanks__header--container span{
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--secundary-color);
+}
+
+.thanks__header--container a{
+  color: var(--orange-color);
+
+  font-weight: 600;
+  font-size: 16px;
+  background: #fff;
+  padding: 16px 10px;
+  border-radius: 8px;
+  transition: filter .2s;
+}
+
+.thanks__header--container a:hover{
+  filter: brightness(90%);
+}
+.call-to-action{
+  margin: 40px auto;
+}
+/* Navbar */
+nav{
+
+  z-index: 20;
+  display: flex;
+  width: 100vw;
+  height: 90px;
+  padding-left: 40px;
+  align-items: center;
+  position: absolute;
+  justify-content: space-between;
+
+  background: var(--white-color);
+  box-shadow: 0 1px 5px var(--secundary-color);
+
+}
+
+.logo img{
+  height: 60px;
+}
