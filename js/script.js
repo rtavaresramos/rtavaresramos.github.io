@@ -61,17 +61,9 @@ window.addEventListener("scroll", function() {
  }
  if(positionY >= 500){
    allTopics2.style.display = 'block'
- }
- if(positionY >= 800){
    allTopics3.style.display = 'block'
- }
- if(positionY >= 1100){
    allTopics4.style.display = 'block'
-   allTopics4.style.marginBottom = '30px'
  }
- if(positionY >= 1200){
-   allTopics4.style.display = 'block'
-   allTopics4.style.marginBottom = '30px'
- }
+
 
 });
