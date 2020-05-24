@@ -10,6 +10,7 @@ var projectContainer = document.getElementById("project-container")
 var rightMove = 0
 arrowLeft.addEventListener('click', ()=>{
   if(rightMove>900){
+    
     arrowLeft.style.display = 'block'
   }else{
     arrowLeft.style.display = 'none'

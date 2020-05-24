@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
 
 
 :root{
@@ -11,6 +11,7 @@
   --light-grey-color: #F7F7F7;
   --white-color: #fff;
   --black-color: #000;
+  --animate-delay: 2s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -29,6 +30,25 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
   }
+  
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+
   #mouse-icon{
     position: relative;
     margin-top: 350px;
@@ -109,11 +129,10 @@ html,body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   overflow-x: hidden;
 
-  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -124,7 +143,7 @@ a{
 ul{
     list-style-type: unset;
 }
-body{
+.fadeIn{
     background: var(--light-grey-color);
     opacity:0;
     -webkit-animation: fadeIn 500ms linear;
@@ -138,14 +157,11 @@ body{
 }
 
 header{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+
   margin: 0;
   padding: 0;
   background-color: #22292F;
-  background-image: url("../imgs/newsite/banner-site.png");
+  background-image: url("../imgs/newsite/bg-newsite-1.jpeg");
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -153,7 +169,81 @@ header{
   height: 100vh;
 }
 
+.header-img{
+  position: absolute;
+  display: flex;
+  height: 570px;
+  width: 750px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 40px;
+  padding: 5px;
+  background: var(--black-color);
+  /* border: 3px solid var(--secundary-color); */
+  box-shadow: 0 0 5px var(--dark-color);
+  border-radius: 8px;
+}
+.header-img img{
+  height: 590px;
+  /* border-radius: 8px; */
+  opacity: .7;
+}
+.header-content .input-email-list-add input{
+  height: 30px;
+}
+.header-content{
+  position: absolute;
+  color: var(--white-color);
+  padding: 12px;
+  bottom: 80px;
+  right: 50px;
+  z-index: 10;
+  width: 600px;
+  box-shadow: 0 0 5px var(--dark-color);
+  background: rgba(22,186,197,1);
 
+  border-radius: 14px;
+
+  opacity:0;
+  -webkit-animation: fadeIn 500ms linear;
+  -moz-animation: fadeIn 500ms linear;
+  -o-animation: fadeIn 500ms linear;
+  animation: fadeIn 500ms linear; 
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  -o-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+}
+
+.header-content p, label{
+  color: var(--secundary-color);
+}
+
+.header-content h1{
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+
+}
+.header-content span{
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--secundary-color);
+}
+
+.header-content button{
+  color: var(--secundary-color);
+}
+
+.input-email-list-add{
+  display: flex;
+  flex-direction: column;
+}
 a{
   color: var(--secundary-color);
   text-decoration: unset;
@@ -170,21 +260,22 @@ a{
 
 /* Navbar */
 nav{
+
+  z-index: 20;
   display: flex;
   width: 100vw;
-  height: 70px;
+  height: 90px;
   align-items: center;
   position: absolute;
   justify-content: space-between;
 
-  background: rgba(0,0,0,.2);
+  background: var(--white-color);
+  box-shadow: 0 1px 5px var(--secundary-color);
 
 }
 
-.logo{
-  color: var(--white-color);
-
-
+.logo img{
+  height: 60px;
 }
 
 .toggle{
@@ -207,7 +298,7 @@ nav{
   display: none;
   border: 1px solid var(--primary-color);
   padding: 8px 12px;
-  color: var(--primary-color);
+  color: var(--orange-color);
   border-radius: 4px;
 
   cursor: pointer;
@@ -223,7 +314,9 @@ ul{
 
 
 ul li{
-  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--orange-color);
   margin: 0 10px;
   list-style: none;
   padding: 10px 10px;
@@ -233,26 +326,24 @@ ul li{
 
 ul li:hover{
   background: var(--primary-color);
-
+  color: var(--white-color);
 }
 
 ul a{
-  color: var(--primary-color);
-  font-size: 16px;
-  font-weight: 300;
   text-decoration: unset;
 }
 
 .nav__ul--siginu-up{
-  color: var(--secundary-color);
-  background: var(--light-grey-color);
-  border: 2px solid var(--primary-color);
+  color: var(--orange-color);
+  background: var(--white-color);
+  border: 2px solid var(--orange-color);
   border-radius: 14px;
   font-weight: 500;
 }
 
 .nav__ul--siginu-up:hover{
 color: var(--white-color);
+border: 2px solid var(--primary-color);
 }
 
 
@@ -261,7 +352,7 @@ color: var(--white-color);
 .headline__container{
   display: flex;
   justify-content: center;
-
+  font-family: 'Montserrat', sans-serif !important;
   width: 100vw;
 }
 
@@ -276,8 +367,7 @@ color: var(--white-color);
 .headline__container h1{
   color: var(--orange-color);
   font-size: 58px;
-  font-weight: 300;
-
+  font-weight: 400;
 }
 
 .all__topic__container{
@@ -294,18 +384,26 @@ color: var(--white-color);
   text-align: center;
   align-items: center;
   width: 80%;
+  height: 250px;
 
   margin: 20px 0;
-  padding: 20px 10px;
+  padding: 10px;
   background: #d6d6d6;
   border-radius: 4px;
 }
 .content__container--img img{
   width: 350px;
   border-radius: 8px;
-  box-shadow: 0 0 15px #d6d6d6;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: width .3s;
+
+
 }
 
+
+.content__container--img img:hover{
+  width: 500px;
+}
 .content__container{
   display: flex;
   justify-content: space-around;
@@ -350,6 +448,7 @@ margin: 8px;
   padding: 16px;
   border-radius: 6px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 .call-to-action a{
   color: var(--white-color);
@@ -378,7 +477,7 @@ footer h1{
 }
 .footer__container{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   justify-content: space-around;
   align-items: center;
@@ -418,12 +517,13 @@ input, textarea, button{
   margin: 16px;
 }
 ::-webkit-input-placeholder {
-  color: var(--primary-color);
-  font-family: 'Roboto', sans-serif;
+  color: var(--secundary-color);
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  font-weight: 600;
 }
 button{
-  color: var(--primary-color);
+  color: var(--secundary-color);
   font-size: 18px;
   font-weight: 700;
   width: 200px;
