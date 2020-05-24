@@ -148,10 +148,10 @@ ul{
 .fadeIn{
     background: var(--light-grey-color);
     opacity:0;
-    -webkit-animation: fadeIn 500ms linear;
-    -moz-animation: fadeIn 500ms linear;
-    -o-animation: fadeIn 500ms linear;
-    animation: fadeIn 500ms linear; 
+    -webkit-animation: fadeIn 1700ms linear;
+    -moz-animation: fadeIn 1700ms linear;
+    -o-animation: fadeIn 1700ms linear;
+    animation: fadeIn 1700ms linear; 
     -webkit-animation-fill-mode:forwards;
     -moz-animation-fill-mode:forwards;
     -o-animation-fill-mode:forwards;
