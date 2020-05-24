@@ -63,14 +63,14 @@
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE and Edge */
 body {
   -ms-overflow-style: none;
-}
+} */
 .project-container .project-card h5 {
   color: var(--primary-color);
   margin: 10px 10px;
