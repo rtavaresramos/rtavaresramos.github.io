@@ -720,7 +720,7 @@ textarea{
     height: 100vh;
     margin-top: 500px;
     padding-top: 450px;
-    background: var(--primary-color);
+    background: var(--white-color);
   }
 
   ul{    opacity:0;
@@ -744,7 +744,7 @@ textarea{
     list-style: none;
     padding: 10px 10px;
     border-radius: 4px;
-    border: 1px solid var(--light-grey-color);
+    border: 1px solid var(--primary-color);
 
     box-shadow: 2px 2px 10px var(--dark-grey-color);
   
