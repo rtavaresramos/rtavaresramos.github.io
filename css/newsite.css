@@ -558,8 +558,8 @@ textarea{
 @media screen and (max-width:635px){
   header{
     margin: 0;
-    padding-left: 6px;
-    padding-right: 6px;
+
+
     background-image: url("../imgs/newsite/bg-newsite-1.jpeg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -605,8 +605,8 @@ textarea{
     color: var(--white-color);
     padding: 12px;
 
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 6px;
+    margin-right: 6px;
     z-index: 10;
     max-width: 300px;
     box-shadow: 0 0 5px var(--dark-color);
