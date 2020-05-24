@@ -557,6 +557,9 @@ textarea{
     width: 100vw;
     height: 100vh;
   }
+  #all-topics .topic__container {
+    display: block;
+  }
 }
 @media screen and (max-width:980px){
   .nav__container{
