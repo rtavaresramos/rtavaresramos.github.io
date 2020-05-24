@@ -180,7 +180,6 @@ header{
   margin-left: 40px;
   padding: 5px;
   background: var(--black-color);
-  /* border: 3px solid var(--secundary-color); */
   box-shadow: 0 0 5px var(--dark-color);
   border-radius: 8px;
 }
@@ -371,13 +370,15 @@ border: 2px solid var(--primary-color);
   color: var(--orange-color);
   font-size: 58px;
   font-weight: 400;
+
+  margin-top: 60px;
 }
 
 main{
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  height: auto;
+  max-height: auto;
 }
 .all__topic__container{
   display: flex;
@@ -393,7 +394,7 @@ main{
   text-align: center;
   align-items: center;
   width: 80%;
-  height: 250px;
+
 
   margin: 20px 0;
   padding: 10px;
@@ -448,7 +449,7 @@ margin: 8px;
   display: flex;
   width: 100vw;
 }
-.call-to-action{
+.call-to-action,.button{
  display: none;
 }
 .call-to-action, .button{
@@ -576,7 +577,7 @@ textarea{
   }
 
   .logo img{
-    width: 170px;
+    height: 70px;
   }
 
   .toggle{
@@ -649,4 +650,81 @@ textarea{
     justify-content: center;
     text-align: center;
   }
+
+
+
+.header-img{
+  position: absolute;
+  display: flex;
+  height: 530px;
+  width: 750px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: -4px;
+  padding: 5px;
+  background: var(--black-color);
+  box-shadow: 0 0 5px var(--dark-color);
+  border-radius: 8px;
+}
+.header-img img{
+  height: 590px;
+  /* border-radius: 8px; */
+  opacity: .7;
+}
+.header-content .input-email-list-add input{
+  height: 30px;
+}
+.header-content{
+  position: absolute;
+  color: var(--white-color);
+  padding: 12px;
+  bottom: -40px;
+  right: 50px;
+  z-index: 10;
+  width: 350px;
+  box-shadow: 0 0 5px var(--dark-color);
+  background: rgba(22,186,197,1);
+
+  border-radius: 14px;
+
+  opacity:0;
+  -webkit-animation: fadeIn 500ms linear;
+  -moz-animation: fadeIn 500ms linear;
+  -o-animation: fadeIn 500ms linear;
+  animation: fadeIn 500ms linear; 
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  -o-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+}
+
+.header-content p, label{
+  color: var(--secundary-color);
+}
+
+.header-content h1{
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+
+}
+.header-content span{
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--secundary-color);
+}
+
+.header-content button{
+  color: var(--secundary-color);
+}
+
+.input-email-list-add{
+  display: flex;
+  flex-direction: column;
+}
 }
