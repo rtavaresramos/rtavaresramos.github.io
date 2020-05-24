@@ -408,7 +408,6 @@ main{
   align-items: center;
   width: 80%;
 
-
   margin: 20px 0;
   padding: 10px;
   background: #d6d6d6;
@@ -425,14 +424,16 @@ main{
 
 
 .content__container--img img:hover{
-  width: 400px;
+  width: 420px;
 }
 .content__container{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
+  align-items: center;
   width: 100%;
+  height: 250px;
 }
 .content__container--text{
   display: flex;
@@ -849,5 +850,18 @@ textarea{
 .input-email-list-add{
   display: flex;
   flex-direction: column;
+}
+
+.content__container--img img:hover{
+  width: 400px;
+}
+.content__container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
 }
