@@ -251,6 +251,10 @@ header{
   display: flex;
   flex-direction: column;
 }
+input{
+  color: var(--secundary-color);
+  font-size: 16px;
+}
 a{
   color: var(--secundary-color);
   text-decoration: unset;
