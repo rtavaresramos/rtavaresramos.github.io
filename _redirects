@@ -1,5 +1,6 @@
 /portal-c19/* https://portal-c19.rtavaresramos.com.br/:splat 200
 /aluguei/* https://aluguei.rtavaresramos.com.br/:splat 200
+/* https://rtavaresramos.com.br/src/:splat 200
 /aula-gratis-insta/* https://rtavaresramos.com.br/src/aula-gratis-insta.html:splat 200
 /aula-gratis-asv/* https://rtavaresramos.com.br/src/aula-gratis-asv.html:splat 200
 /quero-aula-gratis-asv/* https://rtavaresramos.com.br/src/quero-aula-gratis-asv.html:splat 200
